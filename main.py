@@ -1,8 +1,6 @@
 import time
 
-from aibot import BOT
-import tensorflow as tf
-import os
+from Code.aibot import BOT
 
 
 def main():
@@ -15,7 +13,8 @@ def main():
     # answer = my_bot.aibot('input.wav')
 
     print(answer)
-    # print("final answer : " + answer_sen)
+    print("final answer : " + answer_sen)
+
 
     end = time.time()
     print(f"Runtime of the program is {end - start}")

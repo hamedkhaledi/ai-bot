@@ -13,7 +13,7 @@ def find_events(sentence, dates, all_events, all_event_keys):
         event_month = dates[0].split('-')[1]
         event_day = dates[0].split('-')[2]
         new_dates = dates
-        url1 = os.path.join(p, "Data/events/" + event_year + ".csv")
+        url1 = p + "/../../Data/events/" + event_year + ".csv"
         df2 = pd.read_csv(url1)
         for idx, row in df2.iterrows():
             if str(row["month"]) == event_month and str(row["day"]) == str(event_day):
@@ -35,7 +35,7 @@ def find_events(sentence, dates, all_events, all_event_keys):
         new_dates = []
         if len(events) > 0 and len(dates) > 0:
             year = dates[0].split('-')[0]
-            url1 = os.path.join(p, year + ".csv")
+            url1 = p + "/../../Data/events/" + year + ".csv"
             df2 = pd.read_csv(url1)
 
             for idx, row in df2.iterrows():

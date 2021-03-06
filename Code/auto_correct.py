@@ -94,4 +94,3 @@ def auto_correct(sentence: str):
     return new_sen[:-1]
 
 
-auto_correct("اذان ژهر به در حال حاضر افق تران کی است؟")

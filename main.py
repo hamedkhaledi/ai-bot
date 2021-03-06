@@ -7,7 +7,7 @@ def main():
     start = time.time()
 
     my_bot = BOT()
-    sentence = "دمای هوای امروز تهران چقدر است و بهترین بازیکن فوتبال؟"
+    sentence = "ساعت برلین چند است"
     answer, answer_sen = my_bot.AIBOT(sentence)
     # print(answer)
     # answer = my_bot.aibot('input.wav')

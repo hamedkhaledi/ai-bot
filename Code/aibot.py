@@ -1,5 +1,4 @@
 import os
-from playsound import playsound
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 
 from .answer_per_question import answer_per_question
@@ -60,7 +59,7 @@ class BOT:
 
         try:
             Questions = split(Question, events)
-            print(Questions)
+            print('Questions : ' + Questions)
         except:
             Questions = [Question]
             pass
@@ -88,8 +87,6 @@ class BOT:
 
         with open("response.wav", mode='bw') as f:
             f.write(response.content)
-
-        playsound('response.wav')
 
         return answer, final_answer
 
